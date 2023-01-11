@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${DB_URL:localhost:8889}/u101457745_tagsolutions
+    username: ${DB_USER:root}
+    password: ${DB_PASS:root}
+  jpa:
+    generate-ddl: true
+    show-sql: true
+
+server:
+  port: ${PORT:8080}
+
+#amazonProperties:
+#  endpointUrl: https://s3.us-east-1.amazonaws.com
+#  aws.accessKey: ${ACCESS_KEY:access-key}
+#  aws.secretKey: ${SECRET_KEY:secret-key}
+#  aws.region: us-east-1
+#  aws.bucketName: ${BUCKET_NAME:bucket-name}
