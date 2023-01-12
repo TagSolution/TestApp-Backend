@@ -11,6 +11,6 @@ public class TestController {
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/hola")
     public String getTestHola() {
-        return "Hola desde donde sea deployado!!!!!!!!!";
+        return "Hola desde HEROKU ;)";
     }
 }
