@@ -7,4 +7,6 @@ public interface AWSService {
 
     AWSResponse uploadFile(MultipartFile file);
 
+    AWSResponse getFileByName(String fileName);
+
 }

@@ -48,4 +48,13 @@ public class AWSServiceImpl implements AWSService {
 
         return  response;
     }
+
+    @Override
+    public AWSResponse getFileByName(String fileName) {
+        AWSResponse response = new AWSResponse();
+        response.setImageUrl(amazonS3.getUrl(bucketName, fileName).toExternalForm());
+        return response;
+    }
+
+
 }
