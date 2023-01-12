@@ -11,9 +11,8 @@ spring:
 server:
   port: ${PORT:8080}
 
-#amazonProperties:
-#  endpointUrl: https://s3.us-east-1.amazonaws.com
-#  aws.accessKey: ${ACCESS_KEY:access-key}
-#  aws.secretKey: ${SECRET_KEY:secret-key}
-#  aws.region: us-east-1
-#  aws.bucketName: ${BUCKET_NAME:bucket-name}
+amazonProperties:
+  aws.accessKey: ${AWS_ACCESS_KEY:access-key}
+  aws.secretKey: ${AWS_SECRET_KEY:secret-key}
+  aws.region: us-east-1
+  aws.bucketName: ${AWS_BUCKET_NAME:bucket-name}
